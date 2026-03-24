@@ -1,0 +1,30 @@
+{
+  "name": "brasilapi-mcp-server",
+  "version": "1.0.0",
+  "description": "Remote MCP server for Brasil API - CEP, CNPJ, banks, holidays and more",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "brasilapi", "brasil"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "typescript": "^6.0.2"
+  }
+}

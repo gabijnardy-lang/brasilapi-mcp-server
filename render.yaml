@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: brasilapi-mcp-server
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
